@@ -22,7 +22,9 @@ $(call inherit-product-if-exists, vendor/lge/h870/h870-vendor.mk)
 # Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
-# common g6
+#Stuff
+PRODUCT_BOARD_PLATFORM := msm8996
+PRODUCT_USES_QCOM_HARDWARE := true
 # Overlays (inherit after vendor/cm to ensure we override it)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 

@@ -18,15 +18,15 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Potato stuff.
+$(call inherit-product, vendor/potato/config/common_full_phone.mk)
 
 # Inherit from h870 device
 $(call inherit-product, device/lge/h870/device.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := h870
-PRODUCT_NAME := lineage_h870
+PRODUCT_NAME := potato_h870
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LG-h870
 PRODUCT_MANUFACTURER := LGE
@@ -37,4 +37,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="lucye_global_com" \
     PRIVATE_BUILD_DESC="lucye_global_com-user 8.0.0 OPR1.170623.032 183301757502c release-keys"
 
-BUILD_FINGERPRINT := "lge/lucye_global_com/lucye:8.0.0/OPR1.170623.032/183301757502c:user/release-keys"
+BUILD_FINGERPRINT := "google/coral/coral:11/RQ2A.210305.006/7119741:user/release-keys"
